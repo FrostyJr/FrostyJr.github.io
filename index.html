@@ -29,35 +29,37 @@
 <h2 class="text-3xl font-semibold mb-6 text-center">Gallery</h2>
 <p class="text-center">Showcase coming soon...</p>
 </section>
-<section class="p-10 bg-gray-100" id="booking">
-<h2 class="text-3xl font-semibold mb-6 text-center">Get a Quote / Book Now</h2>
-<form class="max-w-xl mx-auto bg-white p-6 rounded shadow">
-<div class="mb-4">
-<label class="block mb-1">Name</label>
-<input class="w-full border rounded p-2" required="" type="text"/>
-</div>
-<div class="mb-4">
-<label class="block mb-1">Email</label>
-<input class="w-full border rounded p-2" required="" type="email"/>
-</div>
-<div class="mb-4">
-<label class="block mb-1">Phone</label>
-<input class="w-full border rounded p-2" required="" type="tel"/>
-</div>
-<div class="mb-4">
-<label class="block mb-1">Service Type</label>
-<select class="w-full border rounded p-2">
-<option>Landscaping</option>
-<option>Car Detailing</option>
-</select>
-</div>
-<div class="mb-4">
-<label class="block mb-1">Details or Questions</label>
-<textarea class="w-full border rounded p-2" rows="4"></textarea>
-</div>
-<button class="bg-green-700 text-white py-2 px-4 rounded hover:bg-green-800" type="submit">Submit</button>
-</form>
+<section id="booking" class="p-10 bg-gray-100">
+  <h2 class="text-3xl font-semibold mb-6 text-center">Get a Quote / Book Now</h2>
+  <form action="https://formspree.io/f/xpwrajyo" method="POST" class="max-w-xl mx-auto bg-white p-6 rounded shadow">
+    <input type="hidden" name="_subject" value="New Booking Request from J.M.T.K Website">
+    <div class="mb-4">
+      <label class="block mb-1">Name</label>
+      <input type="text" name="name" class="w-full border rounded p-2" required>
+    </div>
+    <div class="mb-4">
+      <label class="block mb-1">Email</label>
+      <input type="email" name="email" class="w-full border rounded p-2" required>
+    </div>
+    <div class="mb-4">
+      <label class="block mb-1">Phone</label>
+      <input type="tel" name="phone" class="w-full border rounded p-2" required>
+    </div>
+    <div class="mb-4">
+      <label class="block mb-1">Service Type</label>
+      <select name="service" class="w-full border rounded p-2">
+        <option>Landscaping</option>
+        <option>Car Detailing</option>
+      </select>
+    </div>
+    <div class="mb-4">
+      <label class="block mb-1">Details or Questions</label>
+      <textarea name="message" class="w-full border rounded p-2" rows="4"></textarea>
+    </div>
+    <button type="submit" class="bg-green-700 text-white py-2 px-4 rounded hover:bg-green-800">Submit</button>
+  </form>
 </section>
+
 <section class="p-10 bg-gray-200" id="services">
 <h2 class="text-3xl font-semibold mb-6 text-center">Our Services</h2>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
